@@ -9,7 +9,7 @@
     <title>School landing page</title>
 </head>
 <body>
-    <header>
+    <header class="header wrapper">
             <a href="#">
                 <img src="assets/logo-dark.svg" alt="skilled logo" width="111" height="28">
             </a>
@@ -22,23 +22,26 @@
 
     <main>
         <section class="hero">
-            <div class="hero__text">
-                <h1>Maximize skill, minimize budget</h1>
-                <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want</p>
-                <a href="">
-                    <button class="button pink">
-                        Get Started
-                    </button>
-                </a>
+            <div class="wrapper">
+                <div class="hero__text">
+                    <h1>Maximize skill, minimize budget</h1>
+                    <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want</p>
+                    <a href="">
+                        <button class="button pink">
+                            Get Started
+                        </button>
+                    </a>
+                </div>
+    
+                <picture>
+                    <source media="(min-width: 75em)" srcset="/assets/image-hero-desktop@2x.webp" width="2092" height="1876" />
+    
+                    <source media="(min-width: 50em)" srcset="/assets/image-hero-tablet@2x.webp" width="695" height="723" />
+    
+                    <img src="assets/image-hero-mobile@2x.webp" alt="a woman holding a cofffe mug and looking at her laptop" width="870" height="818">
+                </picture>
             </div>
-
-            <picture>
-                <source media="(min-width: 75em)" srcset="/assets/image-hero-desktop@2x.webp" width="2092" height="1876" />
-
-                <source media="(min-width: 50em)" srcset="/assets/image-hero-tablet@2x.webp" width="695" height="723" />
-
-                <img src="assets/image-hero-mobile@2x.webp" alt="a woman holding a cofffe mug and looking at her laptop" width="870" height="818">
-            </picture>
+            
         </section>
 
         <section class="courses">
@@ -79,5 +82,16 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <a href="#">
+            <img src="assets/logo-light.svg" alt="skilled logo" width="111" height="28">
+        </a>
+        <a href="/">
+            <button class="button purple">
+                Get Started
+            </button>
+        </a>
+</footer>
 </body>
 </html>
